@@ -1,0 +1,226 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* the chef Veganish name */
+.nav-bar {
+  position: absolute;
+  top: 65px;
+  left: 150px;
+  cursor: pointer;
+}
+
+.nav-bar:hover {
+  color: #4592af;
+  transition: 1s;
+}
+
+/* the main menu section */
+li {
+  font-size: 14px;
+}
+
+.nav {
+  position: relative;
+  width: 100%;
+  height: calc(100vh);
+  background-image: url("../images/stick_food.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  animation: animate 10s ease-in-out infinite;
+}
+
+.nav::after {
+  content: "Services";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav ul li {
+  float: left;
+  width: 100px;
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav .sub {
+  position: relative;
+  left: 650px;
+  padding-top: 80px;
+}
+
+/* the contact us button */
+.box-btn {
+  position: relative;
+  left: 100px;
+}
+
+.nav ul .box-btn {
+  width: 200px;
+  text-align: center;
+}
+
+.nav ul .box-btn a {
+  background-color: #ff4949;
+  padding: 14px 13px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav ul .box-btn a:hover {
+  color: #ff4949;
+  background-color: #fff;
+  transition: 1s;
+}
+
+/* the dropdowmn section */
+ul li ul li {
+  display: none;
+}
+
+ul li:hover ul li {
+  display: block;
+  transition: 1s;
+}
+
+.drop-menu ul li {
+  width: 150px;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.drop-menu ul li:hover a {
+  color: #fff;
+}
+
+.drop-menu ul li:hover {
+  background-color: #4592af;
+  opacity: 0.7;
+}
+
+.drop-menu {
+  color: #fff;
+}
+
+/* services section */
+.container {
+  padding: 70px 0;
+}
+
+.service-icons {
+  color: #ff4949;
+  opacity: 0.5;
+}
+
+/* the subsription section */
+.sub-section {
+  position: relative;
+  text-align: center;
+}
+
+.sub-section .sub {
+  position: absolute;
+  background-color: #eaeaea;
+  padding: 150px;
+  width: calc(100vw);
+}
+
+/* the footer section */
+footer #footer {
+  position: relative;
+  top: 350px;
+  display: inline-flex;
+  width: calc(100vw);
+  color: #fff;
+  background-color: #211;
+  padding: 70px;
+}
+
+.about, .timing, .contact {
+  margin-left: 60px;
+  width: 400px;
+  padding: 60px;
+}
+
+.copyright {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+@media screen (min-width: 768px), (max-width: 1024px) {
+
+  /* the chef Veganish name */
+  .nav-bar {
+    font-size: 2rem;
+    left: 20px;
+  }
+
+  /* the main menu section */
+  li {
+    font-size: 14px;
+  }
+
+  .nav {
+    background-repeat: no-repeat;
+    height: 768px;
+    width: 1024px;
+  }
+
+  .nav::after {
+    top: 50%;
+    left: 40%;
+    font-size: 5rem;
+  }
+
+  .nav .sub {
+    position: relative;
+    left: 250px;
+    padding-top: 80px;
+  }
+
+  /* the contact us button */
+  .box-btn {
+    position: relative;
+    left: 0px;
+  }
+
+  .nav ul .box-btn {
+    width: 200px;
+    text-align: center;
+  }
+
+  /* the form section */
+  .btn {
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+
+  /* the subsription section */
+  .sub-section .sub {
+    width: 1024px;
+  }
+
+  /* the footer section */
+  footer #footer {
+    width: 1024px;
+  }
+}

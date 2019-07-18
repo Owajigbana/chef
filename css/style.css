@@ -1,0 +1,571 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+/* the chef Veganish name */
+.nav-bar {
+  position: absolute;
+  top: 65px;
+  left: 150px;
+  cursor: pointer;
+}
+
+.nav-bar:hover{
+  color: #4592af;
+  transition: 1s;
+}
+/* the main menu section */
+li {
+  font-size: 14px;
+}
+
+.nav{
+height: calc(100vh);
+background-image: url("../images/slide1.jpg");
+background-size: cover;
+animation: animate 10s linear infinite;
+}
+
+.nav ul li {
+  float:left;
+  width: 100px;
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+ .nav .sub{
+  position: relative;
+  left: 650px;
+  padding-top: 80px;
+}
+
+/* the contact us button */
+.box-btn {
+  position: relative;
+  left: 100px;
+}
+
+.nav ul .box-btn{
+  width: 200px;
+  text-align: center;
+}
+
+.nav ul .box-btn a {
+  background-color: #ff4949;
+  padding: 14px 13px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav ul .box-btn a:hover {
+  color: #ff4949;
+  background-color: #fff;
+  transition: 1s;
+}
+
+/* the dropdowmn section */
+ul li ul li{
+  display: none;
+}
+
+ul li:hover ul li{
+  display: block;
+  transition: 1s;
+}
+.drop-menu ul li {
+  width: 140px;
+  text-align: left;
+  padding: 5px;
+}
+
+.drop-menu ul li:hover a{
+  color:#fff;
+}
+
+.drop-menu ul li:hover {
+  background-color: #4592af;
+  opacity: 0.7;
+}
+
+.drop-menu{
+  color:#fff;
+}
+
+/* the carousel section */
+.carousel .slider{
+  position: relative;
+  width:200%;
+  margin: 0;
+  left: 0;
+  animation: show 20s infinite;
+}
+.carousel .slider .slide{
+  width: 50%;
+  float: left;
+}
+
+section{
+  position: relative;
+  bottom: 400px;
+  color: #fff;
+  text-align: center;
+}
+
+.slide h3{
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding-bottom: 20px;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.slide .sub-title{
+  font-size: 1.3rem;
+  padding:0 400px;
+}
+
+.slide h4{
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  width:130px;
+  background-color: #ff4949;
+  padding:13px 0;
+  cursor: pointer;
+  transform: translateX(535%);
+}
+
+.slide h4:hover{
+  color: #ff4949;
+  background-color: #fff;
+  transition: 1s;
+}
+
+/* the Services section */
+.container{
+  position: absolute;
+}
+
+.container .row{
+  background-color: #eaeaea;
+  padding:100px;
+  width: calc(100vw);
+}
+ .dishes{
+   margin-top: 400px;
+   padding: 120px;
+}
+
+.service-icons{
+  color: #FFF;
+}
+
+/* the special dishes section */
+.dishes_header h3{
+  font-weight: 900;
+  text-align: center;
+  font-size: 5rem;
+  color: #d2f3e0;
+}
+
+.food{
+  text-decoration: line-through;
+}
+
+.list_dishes section{
+  position: relative;
+  top: 5px;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  animation: show 15s ease-out infinite alternate;
+}
+
+.list_dishes section img{
+  float: left;
+  width: 10.7%;
+  margin: 100px 0 220px 30px;
+}
+
+ .after{
+  position: absolute;
+  left: 60px;
+  top: 50px;
+  width: 120px;
+  height: 120px;
+  background-color: #d2f3e0;
+  border-radius: 100%;
+}
+
+.after h3{
+  padding-top: 40px;
+  font-size: 2rem;
+}
+/* the testimonial section */
+#testimonials{
+  margin-top: 40%;
+  bottom: 0;
+  background-color: #d2f3e0;
+  width: 100%;
+  height: calc(100vh);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+}
+.testimonial-text{
+  padding: 15% 20% 0;
+}
+
+.testimonial-image{
+  border-radius: 100%;
+}
+
+.carousel-item{
+text-align: center;
+}
+
+.test{
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-align: center;
+  position: relative;
+  top:15%;
+  font-weight: 900;
+}
+/* the blog section */
+#blog {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  left: 0;
+}
+
+#blog h3{
+  margin-top: 60px;
+  color:#d2f3e0;
+}
+
+ .blog_food {
+  float: left;
+  width: 50%;
+  padding: 80px 0 120px 70px ;
+}
+
+.image{
+  float: left;
+  padding-right: 20px;
+}
+
+.food_header{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.food_text, .calender{
+  color:grey;
+}
+
+/* the subsription section */
+#sub-section{
+position: relative;
+top: 350px;
+text-align: center;
+}
+
+#sub-section .sub{
+  position: absolute;
+  background-color: #eaeaea;
+  padding: 90px;
+  width: calc(100vw);
+}
+
+/* the footer section */
+#footer{
+  position: relative;
+  top:200px;
+  display: inline-flex;
+
+}
+
+.about, .timing, .contact{
+  margin-left: 60px;
+  width: 400px;
+  padding: 60px;
+}
+
+.copyright{
+  position: relative;
+  top:300px;
+  text-align: center;
+}
+
+/* the keyframe section for animations */
+@keyframes show {
+  0%{
+    left: 0;
+  }
+  25%{
+    left: 0;
+  }
+  50%{
+    left: -100%;
+  }
+  75%{
+    left: -100%;
+  }
+  100%{
+    left: -200%;
+  }
+}
+
+@keyframes animate {
+  0%{
+    background-image: url("../images/slide1.jpg");
+  }
+  30%{
+    background-image: url("../images/slide1.jpg");
+  }
+  50%{
+    background-image: url("../images/slide2.jpg");
+  }
+  80%{
+    background-image: url("../images/slide2.jpg");
+  }
+  100%{
+    background-image: url("../images/slide1.jpg");
+  }
+}
+@media screen (min-width: 768px),(max-width: 1024px)  {
+  /* the chef Veganish name */
+  .nav-bar {
+    top: 65px;
+    font-size: 4.3rem;
+  }
+
+  .nav-bar:hover{
+    color: #4592af;
+    transition: 1s;
+  }
+  /* the main menu section */
+  .nav ul li {
+    font-size: 1.3rem;
+    width: 200px;
+  }
+
+  .nav{
+  height: calc(190vh);
+  width: calc(320vw);
+  }
+
+   .nav .sub{
+    position: relative;
+    left: 850px;
+    padding-top: 80px;
+    padding-right: 60px;
+  }
+
+  /* the carousel section */
+  .carousel .slider{
+    position: relative;
+    width:200%;
+    animation: show 20s infinite;
+  }
+  .carousel .slider .slide{
+    width: 50%;
+    float: left;
+  }
+
+  section{
+    position: relative;
+    left: 20%;
+  }
+
+  .slide .sub-title{
+    padding:0 200px;
+  }
+
+  .slide h4{
+    transform: translateX(335%);
+  }
+
+  /* the Services section */
+
+  .container .row{
+    padding:130px;
+    width: calc(320vw);
+  }
+
+.dishes{
+  height: calc(100vh);
+  margin-top: 80%;
+}
+
+  /* the testimonial section */
+  #testimonials{
+    margin-top: 40%;
+    bottom: 0;
+    width: calc(320vw);
+    height: calc(150vh);
+    font-size: 1.1rem;
+  }
+  .testimonial-text{
+    padding: 15% 30% 0;
+  }
+
+  /* the blog section */
+  #blog {
+    position: relative;
+    width: calc(320vw);
+    height: calc(80vh);
+    margin: 0;
+    left: 0;
+  }
+
+  #blog h3{
+    padding-bottom: 10%;
+  }
+
+  /* the subsription section */
+  #sub-section{
+  position: relative;
+  top: 150px;
+  text-align: center;
+  }
+
+  #sub-section .sub{
+    padding: 140px;
+    width: calc(320vw);
+    height: calc(50vh);
+  }
+
+  /* the footer section */
+  #footer{
+    margin-top: 70%;
+    margin-left: 55%;
+    height: calc(80vh);
+  }
+
+  .about, .timing, .contact{
+    width: 600px;
+    padding-top: 0%;
+  }
+
+  .copyright{
+    top:40px;
+    left: 120%;
+  }
+
+}
+@media  (max-width: 568px)  {
+  /* the chef Veganish name */
+  .nav-bar {
+    top: 65px;
+    font-size: 2.3rem;
+    left:5%;
+  }
+  /* the main menu section */
+  .nav ul li {
+    font-size: 1rem;
+    width: 110px;
+  }
+
+  .nav{
+    height: calc(360vh);
+    width: calc(400vw);
+  }
+
+  .nav .sub{
+    left: 355px;
+  }
+
+  /* the carousel section */
+  .carousel .slider{
+    position: absolute;
+    margin-bottom: 45%;
+    width:350%;
+    bottom: 10%;
+    animation: show 20s infinite;
+  }
+
+  .slide .sub-title{
+    padding:0 0px;
+  }
+
+  .slide h4{
+    transform: translateX(275%);
+  }
+
+  /* the Services section */
+
+  .container .row{
+    width: calc(400vw);
+  }
+
+.dishes{
+  height: calc(300vh);
+  margin-top: 300%;
+}
+
+  /* the testimonial section */
+  #testimonials{
+    width: calc(400vw);
+    height: calc(250vh);
+  }
+  .testimonial-text{
+    padding: 20% 30% 0;
+  }
+
+  /* the blog section */
+  #blog {
+    position: relative;
+    width: calc(295vw);
+    height: calc(80vh);
+    margin: 0;
+    left: 0;
+  }
+
+  #blog h3{
+    padding-bottom: 10%;
+  }
+
+  /* the subsription section */
+  #sub-section{
+  top: 380px;
+  }
+
+  #sub-section .sub{
+    padding: 160px;
+    width: calc(400vw);
+  }
+
+  /* the footer section */
+  #footer{
+    margin-top: 80%;
+    margin-left: 10%;
+    height: calc(60vh);
+  }
+
+  .about, .timing, .contact{
+    width: 400px;
+  }
+
+  .copyright{
+    margin-top:40%;
+    left: 130%;
+  }
+
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- stylesheet css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans+Narrow|Roboto+Mono|Ubuntu&display=swap" rel="stylesheet">
+  <!-- stylesheet bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title> Chef Veganish!</title>
+</head>
+
+<body>
+
+  <!-- the nav section -->
+  <div class="slider">
+    <div class="nav">
+
+      <h1 class="nav-bar">Chef Veganish <span>!</span></h1>
+      <ul class="sub">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#blog">Recipes</a></li>
+        <li class="drop-menu"><a href="service.html" target="_self">Services</a> <i class="fas fa-caret-down"></i>
+          <ul>
+            <li class="services"><a href="">Catering</a></li>
+            <li class="services"><a href="">Birthday Party</a></li>
+            <li class="services"><a href="">Wedding Party</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" target="_self">About</a></li>
+        <li><a href="#sub-section">News</a></li>
+        <li class="box-btn"><a href="contact.html" target="_self">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- the slider section -->
+  <div class="carousel">
+    <!-- give the input name="slides" to allow toggle between the slides -->
+    <div class="slider">
+      <section class="slide slide-one">
+        <h3>Expert Chef</h3>
+        <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          Duis aute irure in voluptate.</p>
+        <h4>Start Here</h4>
+      </section>
+      <section class="slide slide-two">
+        <h3>Delecious Food</h3>
+        <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          Duis aute irure in voluptate.</p>
+        <h4>Start Here</h4>
+      </section>
+    </div>
+  </div>
+
+  <!-- services types section -->
+  <div class="container services">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 services">
+        <i class="fas fa-seedling fa-5x service-icons"></i>
+        <p class="heading">Herbs</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Aliquid optio, explicabo temporibus.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 services">
+        <i class="fas fa-glass-cheers fa-5x service-icons"></i>
+        <p class="heading">Drinks</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Aliquid optio, explicabo temporibus.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 services">
+        <i class="fas fa-fish fa-5x service-icons"></i>
+        <p class="heading">Sea Food</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Aliquid optio, explicabo temporibus.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 services">
+        <i class="fas fa-mug-hot fa-5x service-icons"></i>
+        <p class="heading">Hot Drinks</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Aliquid optio, explicabo temporibus.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- creating a carousel -->
+  <div class="container-fluid dishes">
+    <div class="dishes_header">
+      <h3>SPECIAL <span class="food">DISHES</span></h3>
+    </div>
+    <div class="list_dishes">
+      <section>
+        <img  src="images/burger.jpg" alt="" width="400px" height="400px">
+        <div class="after"><h3>£10</h3></div>
+        <img  src="images/rice_peas.jpg" alt="" width="400px" height="400px">
+        <img  src="images/noodles.jpg" alt="" width="400px" height="400px">
+        <img  src="images/salad_bowl.jpg" alt="" width="400px" height="400px">
+        <img  src="images/snacks.jpg" alt="" width="400px" height="400px">
+        <img  src="images/stick_food.jpg" alt="" width="400px" height="400px">
+      </section>
+    </div>
+  </div>
+
+  <!-- Testimonial section -->
+  <div id="testimonials">
+    <h3 class="test">Testimonial</h3>
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <p class="testimonial-text">“ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
+            obcaecati? Quis eum minus, sequi atque quisquam ducimus aliquam veritatis
+            nobis cum iusto neque enim explicabo maxime natus doloribus,
+            fuga sunt. ”</p>
+          <img class="testimonial-image" src="images/chef.jpg" alt="" width="150px" height="150px">
+          <em>Mellisa Howards <span>CEO, XYZ Company</span></em>
+        </div>
+        <div class="carousel-item  container-fluid">
+          <p class="testimonial-text">“ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
+            obcaecati? Quis eum minus, sequi atque quisquam ducimus aliquam veritatis
+            nobis cum iusto neque enim explicabo maxime natus doloribus,
+            fuga sunt. ”</p>
+          <img class="testimonial-image" src="images/noodles.jpg" alt="" width="150px" height="150px">
+          <em>Mellisa Howards <span>CEO, XYZ Company</span></em>
+        </div>
+        <div class="carousel-item  container-fluid">
+          <p class="testimonial-text">“ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
+            obcaecati? Quis eum minus, sequi atque quisquam ducimus aliquam veritatis
+            nobis cum iusto neque enim explicabo maxime natus doloribus,
+            fuga sunt. ”</p>
+          <img class="testimonial-image" src="images/burger.jpg" alt="" width="150px" height="150px">
+          <em>Mellisa Howards <span>CEO, XYZ Company</span></em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+
+  <!-- the blog section -->
+  <div id="blog">
+    <h3 class="test">BLOG</h3>
+    <div class="blog_food">
+      <img src="images/noodles.jpg" alt="" class="image" width="250px" height="250px">
+      <p class="food_header">How to cook vegan noodles</p>
+      <p class="calender"><i class="far fa-calendar-alt"></i> May 16,2019</p>
+      <p class="food_text">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Architecto illo delectus...</p>
+      <button class="btn btn-outline-danger" type="button" name="button">READ MORE</button>
+    </div>
+    <div class="blog_food">
+      <img src="images/stick_food.jpg" alt="" class="image" width="250px" height="250px">
+      <p class="food_header">How to make quick vegan finger food</p>
+      <p class="calender"><i class="far fa-calendar-alt"></i> May 16,2019</p>
+      <p class="food_text">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Architecto illo delectus...</p>
+      <button class="btn btn-outline-danger" type="button" name="button">READ MORE</button>
+    </div>
+  </div>
+
+  <!-- subscribe section -->
+  <div id="sub-section">
+    <div class="sub">
+      <h3 class="sub_header">Subscribe Newsletter</h3>
+      <p class="sub_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Dolore ex temporibus magni ipsam inventore dolorum sunt, amet vel.</p>
+      <input type="text" name="text" placeholder="Enter your eamil address here..">
+      <button class="btn btn-dark" type="button" name="button">SUBSCRIBE</button>
+    </div>
+  </div>
+
+  <!-- the footer section -->
+  <div id="footer">
+    <div class="about">
+      <h3 class="footer_header">About Us</h3>
+      <p class="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Dolore ex temporibus magni ipsam inventore dolorum sunt,
+        amet vel.</p>
+    </div>
+
+    <div class="timing">
+      <h3 class="footer_header">Opening Hours</h3>
+      <p class="hours_text">Monday-Friday <span>10AM-6PM</span></p>
+    </div>
+
+    <div class="contact">
+      <h3 class="footer_header">Contact Info</h3>
+      <p class="contact_text">Address: <span>16 street name, city, England</span></p>
+      <p class="contact_text">Telephone: <span>+44 79 6533 7780 </span></p>
+      <p class="contact_text">Email: <span>email@hotmail.com</span></p>
+    </div>
+  </div>
+
+  <p class="copyright">Copyright &copy 2019 Owajigbana Uloyok</p>
+
+  <!-- script for bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+<!-- photo credit : Photo by Anna Pelzer on Unsplash
+Photo by Louis Hansel on Unsplash
+Photo by The Creative Exchange on Unsplash
+Photo by Fábio Alves on Unsplash
+Photo by Pille-Riin Priske on Unsplash
+Photo by Clem Onojeghuo on Unsplash
+Photo by Chelsea shapouri on Unsplash-->
+
+</html>

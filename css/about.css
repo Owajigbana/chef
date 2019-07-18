@@ -1,0 +1,272 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* the chef Veganish name */
+.nav-bar {
+  position: absolute;
+  top: 65px;
+  left: 150px;
+  cursor: pointer;
+}
+
+.nav-bar:hover {
+  color: #4592af;
+  transition: 1s;
+}
+
+/* the main menu section */
+li {
+  font-size: 14px;
+}
+
+.nav {
+  background-image: url("../images/slide1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: calc(135vw);
+  height: calc(100vh);
+  animation: animate 10s linear infinite;
+  }
+
+
+.nav::after {
+  content: "About Us";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav ul li {
+  float: left;
+  width: 100px;
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav .sub {
+  position: relative;
+  left: 650px;
+  padding-top: 80px;
+}
+
+/* the contact us button */
+.box-btn {
+  position: relative;
+  left: 100px;
+}
+
+.nav ul .box-btn {
+  width: 200px;
+  text-align: center;
+}
+
+.nav ul .box-btn a {
+  background-color: #ff4949;
+  padding: 14px 13px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav ul .box-btn a:hover {
+  color: #ff4949;
+  background-color: #fff;
+  transition: 1s;
+}
+
+/* the dropdowmn section */
+ul li ul li {
+  display: none;
+}
+
+ul li:hover ul li {
+  display: block;
+  transition: 1s;
+}
+
+.drop-menu ul li {
+  width: 150px;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.drop-menu ul li:hover a {
+  color: #fff;
+}
+
+.drop-menu ul li:hover {
+  background-color: #4592af;
+  opacity: 0.7;
+}
+
+.drop-menu {
+  color: #fff;
+}
+
+/* the history section */
+.history{
+  height: calc(80vh);
+}
+
+.history-text {
+  width: 400px;
+  position: absolute;
+  left: 25%;
+  top: 130%;
+}
+
+.para-1{
+  width:800px;
+}
+.history-text h3 {
+  float: left;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ff4949;
+  padding-right: 2%;
+}
+
+.history .history-img img {
+  position: relative;
+  bottom: 200px;
+  float: left;
+}
+
+/* the footer section */
+footer #footer {
+  position: relative;
+  top: 450px;
+  display: inline-flex;
+  width: calc(120vw);
+  color: #fff;
+  background-color: #211;
+  padding: 70px;
+}
+
+.about, .timing, .contact {
+  margin-left: 60px;
+  width: 400px;
+  padding: 60px;
+}
+
+.copyright {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+@media screen (min-width: 768px), (max-width: 1024px) {
+
+  /* the chef Veganish name */
+  .nav-bar {
+    font-size: 2rem;
+    left: 20px;
+  }
+
+  /* the main menu section */
+  li {
+    font-size: 14px;
+  }
+
+  .nav::after {
+    top: 50%;
+    left: 40%;
+    font-size: 5rem;
+  }
+
+  .nav .sub {
+    position: relative;
+    left: 250px;
+    padding-top: 80px;
+  }
+
+  /* the contact us button */
+  .box-btn {
+    position: relative;
+    left: 0px;
+  }
+
+  .nav ul .box-btn {
+    width: 200px;
+    text-align: center;
+  }
+  /* the history section */
+
+  .history-text {
+    padding: 0 180px;
+    bottom: 360px;
+  }
+
+  /* the footer section */
+  footer #footer {
+    width: calc(135vw);
+  }
+}
+
+@media  (max-width: 568px) {
+
+  /* the chef Veganish name */
+  .nav-bar {
+    font-size: 2rem;
+    left: 20px;
+  }
+
+  /* the main menu section */
+  li {
+    font-size: 1rem;
+  }
+  .nav{
+    width: calc(310vw);
+    height: calc(150vh);
+  }
+  .nav::after {
+    top: 50%;
+    left: 50%;
+    font-size: 5rem;
+  }
+
+  .nav .sub {
+    position: relative;
+    left: 250px;
+    padding-top: 80px;
+  }
+
+  /* the contact us button */
+  .box-btn {
+    position: relative;
+    left: 0px;
+  }
+
+  .nav ul .box-btn {
+    width: 200px;
+    text-align: center;
+  }
+  /* the history section */
+  .history-text {
+    top: 190%;
+  }
+
+  /* the footer section */
+  footer #footer {
+    width: calc(310vw);
+  }
+}
